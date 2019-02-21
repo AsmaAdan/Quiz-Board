@@ -1,6 +1,9 @@
 .jumbotron {background-color: #3BD4CD;
 }
 .container {background-color: #813372;
+  #B63E9E;
+  #896782
+  #813372;
   #982982;
   #896782;
   #982982;
@@ -10,6 +13,10 @@
 .form-group {background-color: #927DA3;
 }
 .radio{font-size: 100%;
-       color: #3BD4CD;
+       color: black;
+       #3BD4CD;
+}
+.well{background-color: #73C6B6;
+  #85C1E9;
 
 }
