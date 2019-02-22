@@ -1,22 +1,19 @@
-.jumbotron {background-color: #3BD4CD;
+.jumbotron {background-color: white;
+
 }
-.container {background-color: #813372;
-  #B63E9E;
-  #896782
-  #813372;
-  #982982;
-  #896782;
-  #982982;
-  #B63E9E ;
-  #896782;
+.container {background-color: #40E0D0;
+
 }
-.form-group {background-color: #927DA3;
-}
+
 .radio{font-size: 100%;
        color: black;
-       #3BD4CD;
 }
-.well{background-color: #73C6B6;
-  #85C1E9;
+.well{background-color:#813372;
 
+}
+h1{text-align: center;
+}
+h2{text-align: center;
+}
+#after-submit { visibility: hidden;
 }
