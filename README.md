@@ -1,6 +1,7 @@
 # Triangle-Identifier
 ### An attempt at learning how to make applications using JavaScript.
 #### By Asma Adan
+
 ##### Learning JavaScript at Moringa School prep requires the setting up of an application using HTML,CSS and JavaScript.
 ##### This particular  application allow the user to do a quiz online, submit it and then be informed how they performed.  
 ##### The application also the tells the user how they did on the test, how many corect answers they got and the way forward.
@@ -27,11 +28,14 @@ functions better and make the website more appealing. Thank you in advance.
 
 *The Program allows the user to make only one choice among three choices, it does not accept 2 choices
 
-*The Program assigns +1 when the answer is correct and a +0 when the answer is wrong.
+*The Program assigns +16.67 when the answer is correct and a +0 when the answer is wrong.
    
 *The Program then adds up all the answers and gives the user a grade.
 
-  
+*The program show a picture along with grade. 
+
+*The program allows a user to retake the test. 
+ 
 
 ## Setup
 #### Want to help Me learn more? Great!
@@ -55,6 +59,8 @@ functions better and make the website more appealing. Thank you in advance.
 *CSS
 
 *JavaScript
+
+*jQuery
 
 *Markdown
 
