@@ -49,7 +49,7 @@ $(document).ready(function() {
 			correct += 0;
 		}
 		var messages = ["Awesome", "keep improving", "it is important that you repeat this quiz"]
-		
+
 		var range;
 		if (correct >= 5) {
 			range = 0;
@@ -61,6 +61,7 @@ $(document).ready(function() {
 		document.getElementById("messages").innerHTML = messages[range];
 
 		document.getElementById("numberOfRights").innerHTML = nameInput + " you got " + correct + " points out of a total 12 points";
-		event.preventDefault();
+document.getElementById("retake").style.visibility = "visible";
+    event.preventDefault();
 	});
 });
