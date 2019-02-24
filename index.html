@@ -16,17 +16,17 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="form-group">
-						<label for="name">Name:</label> <input class="form-control" id="name" type="text" required>
+						<label for="name">Name:</label> <input class="form-control" id="name" required="" type="text">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="form-group">
-						<label for="email">Email:</label> <input class="form-control" id="email" type="email" required>
+						<label for="email">Email:</label> <input class="form-control" id="email" required="" type="email">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="form-group">
-						<label for="today">Date:</label><input class="form-control" id="date" type="date" required>
+						<label for="today">Date:</label><input class="form-control" id="date" required="" type="date">
 					</div>
 				</div>
 			</div>
@@ -34,12 +34,12 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="radio">
-              <br>
+							<br>
 							<div class="panel panel-default">
 								<label for="question1">Q1. The script tag must be placed in the?<br>
-								<input name="question1" type="radio" value="The head tag" id ="q1"> the head tag<br>
-								<input name="question1" type="radio" value="before body end" id ="q1"> before body end<br>
-								<input name="question1" type="radio" value="The title or head" id ="q1"> the title or head<br></label><br>
+								<input id="q1" name="question1" type="radio" value="The head tag"> the head tag<br>
+								<input id="q1" name="question1" type="radio" value="before body end"> before body end<br>
+								<input id="q1" name="question1" type="radio" value="The title or head"> the title or head<br></label><br>
 								<br>
 							</div>
 							<div class="panel panel-default">
@@ -54,13 +54,13 @@
 								<input name="question3" type="radio" value="javascript"> JavaScript<br>
 								<input name="question3" type="radio" value="script"> script<br>
 								<input name="question3" type="radio" value="scripted"> scripted<br></label><br>
-                  <br>
+								<br>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="radio">
-              <br>
+							<br>
 							<div class="panel panel-default">
 								<label for="question4">Q4. In JavaScript, we do not have datatypes like integer and float. What is the function that can be used to check if the number is an integer or not?<br>
 								<input name="question4" type="radio" value="integer"> integer<br>
@@ -71,7 +71,7 @@
 							<div class="panel panel-default">
 								<label for="question5">Q5. Which of the following is an advantage of using JavaScript?<br>
 								<input name="question5" type="radio" value="Increased interactivity"> increased interactivity<br>
-								<input name="question5"type="radio" value="late feedback from users"> late feedback from users<br>
+								<input name="question5" type="radio" value="late feedback from users"> late feedback from users<br>
 								<input name="question5" type="radio" value="increased server interaction"> increased server interaction<br></label><br>
 								<br>
 							</div>
@@ -79,26 +79,27 @@
 								<label for="question6">Q6. Which function of an Array object calls a function for each element in the array?<br>
 								<input name="question6" type="radio" value="every()"> every<br>
 								<input name="question6" type="radio" value="forEach"> forEach<br>
-								<input name="question6"type="radio" value="forEvery()">forEvery<br></label>
+								<input name="question6" type="radio" value="forEvery()">forEvery<br></label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-      <div id= "submit">
-      <input type="submit" value="submit">
-      </div>
-		</form>
-    <div id ="after-submit">
-      <p id = "results"></p>
-      <p id= "messages"></p>
-      <img id = "photo">
-        <div id="retake">
-          <a class="button" href="index.html">Retake Quiz</a>
-        </div>
+			<div id="submit">
+				<input type="submit" value="submit">
 			</div>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-		<script src="js/scripts.js"></script>
-
+		</form>
+		<div id="after-submit">
+			<p id="results"></p>
+			<p id="messages"></p>
+      <img id="photo">
+		</div>
+    <div id="retake">
+				<a class="button" href="index.html">Retake Quiz</a>
+		</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+		<script src="js/scripts.js">
+		</script>
+	</div>
 </body>
 </html>

@@ -11,20 +11,16 @@ $(document).ready(function() {
 		var question6 = $("input:radio[name=question6]:checked").val();
 
 
-
-		if (question1=== undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
-
+		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
 			alert("Please answer all questions")
-	}
+		}
 
 		var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
 
-		function results () {
-		  return  nameInput + " you got " + correct;
+		function results() {
+			return nameInput + " you got " + correct;
 		}
-
-
-    var correct = 0
+		var correct = 0
 		if (question1 == answers[0]) {
 			correct += 16.67;
 		} else if (question1 != answers[0]) {
@@ -55,23 +51,25 @@ $(document).ready(function() {
 		} else if (question6 != answers[5]) {
 			correct += 0;
 		}
-
 		var messages = ["Awesome!: ", "Fairly passed", "It is important you repeat this test"]
-    var photo = ["images/awesome.jpeg",   "images/good.jpeg", "images/fail.jpeg",]
-
+		var photo = ["images/awesome.jpeg", "images/good.jpeg", "images/fail.jpeg", ]
 		var score;
 		if (correct >= 83.33) {
 			score = 0;
-		} else if (correct >= 50 && correct < 83) {
+		} else if (correct >= 49 && correct < 83) {
 			score = 1;
 		} else if (correct <= 33.2 && correct < 49) {
 			score = 2;
 		}
 
+
 		document.getElementById("messages").innerHTML = messages[score];
-    document.getElementById("results").innerHTML = results ();
+		document.getElementById("results").innerHTML = results();
 		document.getElementById("photo").src = photo[score];
-		document.getElementById("retake").style.visibility = "visible";
+    function myFunction() {
+      document.getElementById("retake").style.visibilty = "visible";
+  }
+
 
 		event.preventDefault();
 	});
