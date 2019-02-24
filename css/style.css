@@ -21,3 +21,4 @@ input:invalid {
 
 input:focus:invalid {
   box-shadow: none;
+}
