@@ -10,7 +10,6 @@ $(document).ready(function() {
 		var question5 = $("input:radio[name=question5]:checked").val();
 		var question6 = $("input:radio[name=question6]:checked").val();
 
-
 		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
 			alert("Please answer all questions")
 		}
@@ -62,14 +61,12 @@ $(document).ready(function() {
 			score = 2;
 		}
 
-
 		document.getElementById("messages").innerHTML = messages[score];
 		document.getElementById("results").innerHTML = results();
 		document.getElementById("photo").src = photo[score];
     function myFunction() {
       document.getElementById("retake").style.visibilty = "visible";
   }
-
 
 		event.preventDefault();
 	});
