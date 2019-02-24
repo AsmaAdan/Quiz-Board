@@ -52,7 +52,7 @@ $(document).ready(function() {
   			correct += 0;
   		}
 		var messages = ["Awesome", "keep improving", "it is important that you repeat this quiz"]
-
+    var photo = ["images/awesome.jpeg",   "images/good.jpeg", "images/fail.jpeg",]
     var score;
 		if (correct >= 83.33) {
 			score = 0;
@@ -63,7 +63,7 @@ $(document).ready(function() {
 		}
 		document.getElementById("messages").innerHTML = messages[range];
     document.getElementById("results").innerHTML = results ();
-
+    document.getElementById("photo").src = photo[score];
 document.getElementById("retake").style.visibility = "visible";
     event.preventDefault();
 	});
