@@ -14,52 +14,52 @@ $(document).ready(function() {
       alert("Please answer all questions")
 		}
 
-    function results () {
-    		  return  nameInput + " you got " + correct;
-    		}
+
 		var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
 
-		var correct = 0;
-
-		if (question1 == answers[0]) {
-			correct += 2;
-		} else if (question1 != answers[0]) {
-			correct += 0;
-		}
-		if (question2 == answers[1]) {
-			correct += 2;
-		} else if (question2 != answers[1]) {
-			correct += 0;
-		}
-		if (question3 == answers[2]) {
-			correct += 2;
-		} else if (question3 != answers[2]) {
-			correct += 0;
-		}
-		if (question4 == answers[3]) {
-			correct += 2;
-		} else if (question4 != answers[3]) {
-			correct += 0;
-		}
-		if (question5 == answers[4]) {
-			correct += 2;
-		} else if (question5 != answers[4]) {
-			correct += 0;
-		}
-		if (question6 == answers[5]) {
-			correct += 2;
-		} else if (question6 != answers[5]) {
-			correct += 0;
-		}
+    function results () {
+          return  nameInput + " you got " + correct;
+        }
+        var correct = 0
+  		if (question1 == answers[0]) {
+  			correct += 16.67;
+  		} else if (question1 != answers[0]) {
+  			correct += 0;
+  		}
+  		if (question2 == answers[1]) {
+  			correct += 16.67;
+  		} else if (question2 != answers[1]) {
+  			correct += 0;
+  		}
+  		if (question3 == answers[2]) {
+  			correct += 16.66;
+  		} else if (question3 != answers[2]) {
+  			correct += 0;
+  		}
+  		if (question4 == answers[3]) {
+  			correct += 16.67;
+  		} else if (question4 != answers[3]) {
+  			correct += 0;
+  		}
+  		if (question5 == answers[4]) {
+  			correct += 16.67;
+  		} else if (question5 != answers[4]) {
+  			correct += 0;
+  		}
+  		if (question6 == answers[5]) {
+  			correct += 16.66;
+  		} else if (question6 != answers[5]) {
+  			correct += 0;
+  		}
 		var messages = ["Awesome", "keep improving", "it is important that you repeat this quiz"]
 
-		var range;
-		if (correct >= 5) {
-			range = 0;
-		} else if (correct >= 3 && correct < 5) {
-			range = 1;
-		} else if (correct >= 1 && correct < 3) {
-			range = 2;
+    var score;
+		if (correct >= 83.33) {
+			score = 0;
+		} else if (correct >= 50 && correct < 83) {
+			score = 1;
+		} else if (correct <= 33.2 && correct < 49) {
+			score = 2;
 		}
 		document.getElementById("messages").innerHTML = messages[range];
     document.getElementById("results").innerHTML = results ();
