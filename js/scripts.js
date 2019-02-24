@@ -14,6 +14,9 @@ $(document).ready(function() {
       alert("Please answer all questions")
 		}
 
+    function results () {
+    		  return  nameInput + " you got " + correct;
+    		}
 		var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
 
 		var correct = 0;
@@ -59,8 +62,8 @@ $(document).ready(function() {
 			range = 2;
 		}
 		document.getElementById("messages").innerHTML = messages[range];
+    document.getElementById("results").innerHTML = results ();
 
-		document.getElementById("numberOfRights").innerHTML = nameInput + " you got " + correct + " points out of a total 12 points";
 document.getElementById("retake").style.visibility = "visible";
     event.preventDefault();
 	});
