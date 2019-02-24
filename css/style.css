@@ -1,24 +1,25 @@
-.jumbotron {background-color: white;
-
+.jumbotron {
+	background-color: white;
 }
-.container {background-color: #40E0D0;
-
+.container {
+	background-color: #40E0D0;
 }
-
-.radio{font-size: 100%;
-       color: black;
+.radio {
+	font-size: 100%;
+	color: black;
 }
-.well{background-color:#813372;
-
+.well {
+	background-color: #813372;
 }
-h1{text-align: center;
+h1 {
+	text-align: center;
 }
-h2{text-align: center;
+h2 {
+	text-align: center;
 }
 input:invalid {
-  box-shadow: 0 0 5px 1px red;
+	box-shadow: 0 0 5px 1px red;
 }
-
 input:focus:invalid {
-  box-shadow: none;
+	box-shadow: none;
 }
