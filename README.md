@@ -1,4 +1,4 @@
-# Triangle-Identifier
+# Quiz Board
 ### An attempt at learning how to make applications using JavaScript.
 #### By Asma Adan
 
