@@ -12,6 +12,7 @@ $(document).ready(function() {
 		var question4 = $("input:radio[name=question4]:checked").val();
 		var question5 = $("input:radio[name=question5]:checked").val();
 		var question6 = $("input:radio[name=question6]:checked").val();
+		$("input").prop('disable',true);
 		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
 			alert("Please answer all questions")
 		}
