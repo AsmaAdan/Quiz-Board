@@ -1,3 +1,6 @@
+var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
+
+
 $(document).ready(function() {
 	$(".quiz").submit(function() {
 		var nameInput = $("input#name").val();
@@ -12,11 +15,11 @@ $(document).ready(function() {
 		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
 			alert("Please answer all questions")
 		}
-		var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
 
 		function results() {
 			return nameInput + " you got " + correct;
 		}
+
 		var correct = 0
 		if (question1 == answers[0]) {
 			correct += 16.67;
@@ -48,7 +51,7 @@ $(document).ready(function() {
 		} else if (question6 != answers[5]) {
 			correct += 0;
 		}
-		var messages = ["Awesome!: ", "Fairly passed", "It is important you repeat this test"]
+		var messages = ["Awesome!", "Fairly passed", "It is important you repeat this test"]
 		var photo = ["images/awesome.jpeg", "images/good.jpeg", "images/fail.jpeg", ]
 		var score;
 		if (correct >= 83.33) {

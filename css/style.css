@@ -18,3 +18,9 @@ input:invalid {
 input:focus:invalid {
   box-shadow: none;
 }
+.messages2{
+  font-size: 40px;
+}
+.results2{
+  font-size: 40px;
+}
