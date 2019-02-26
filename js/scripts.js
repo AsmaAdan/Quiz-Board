@@ -2,7 +2,7 @@ var answers = ["before body end", "script", "script", "isInteger", "Increased in
 
 
 $(document).ready(function() {
-	$(".quiz").submit(function() {
+	$(".quiz").submit(function(event) {
 		var nameInput = $("input#name").val();
 		var emailInput = $("input#email").val();
 		var dob = $("#date").val();
